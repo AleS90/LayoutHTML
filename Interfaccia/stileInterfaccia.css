@@ -1,0 +1,104 @@
+body{
+    background-color: white;
+    font-family: "Lucida Console", Courier, monospace;
+}
+.logo{
+	color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.list-wrapper{
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: whitesmoke
+}
+/*GESTIONE GENERALE PROFILI*/
+.elenco_profili{
+    background-color: #FFF;
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.elenco_profili .profilo{
+    display: flex;
+    padding: 20px 15px;
+}
+
+.elenco_profili .profilo:hover{
+    background-color: rgba(220, 220, 220, 0.2);;
+}
+.elenco_profili  .list-container:not(:last-child){
+    border-bottom: 1px solid #EEE;
+}
+
+/*GESTIONE IMMAGINE PROFILO*/
+.elenco_profili .immagine_profilo{
+    flex-shrink: 0;
+    height: 80px;
+}
+.elenco_profili .immagine_profilo img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+/*GESTIONE DESCRIZIONE PROFILI*/
+.elenco_profili .descrizione_profilo{
+    flex-grow: 1;
+    padding: 0 20px;
+}
+.elenco_profili .descrizione_profilo h4{
+    margin: 0;
+    font-size: 18px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+.elenco_profili .descrizione_profilo p{
+    margin-top: 5px;
+    color: #AAA;
+    margin-bottom: 0;
+}
+/*FOOTER*/
+.navigazione{
+    display: flex;
+
+}
+.navigazione nav{
+    display: flex;
+    flex-grow: 1;
+}
+.navigazione nav ul{
+    padding-left: 0;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin:0;
+}
+.menu-item{
+    flex-grow: 1;
+    padding:20px 8px;
+    text-transform: uppercase;
+    color:rgba(77, 77, 77,0.5);
+    
+}
+.menu-item:nth-child(2){
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    color:rgb(77, 77, 77);
+    font-weight:bold;
+}
+.menu-item:hover{
+    font-weight:bold;
+    color:rgb(77, 77, 77);
+
+}
